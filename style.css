@@ -400,7 +400,43 @@ table {
   overflow: hidden;
 }
 
+/* 背景コラージュ:院内シーンの画像を敷き詰め、上の白レイヤーで透かせる */
+.hero__collage {
+  position: absolute;
+  /* 回転させても端が見えないよう大きめに配置 */
+  inset: -10%;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 10px;
+  transform: rotate(-4deg);
+}
+
+.hero__collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 透かし用オーバーレイ(この上に文字が乗る) */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    160deg,
+    rgba(244, 249, 253, 0.92) 0%,
+    rgba(234, 243, 250, 0.86) 55%,
+    rgba(220, 235, 247, 0.88) 100%
+  );
+}
+
 .hero__inner {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -459,6 +495,7 @@ table {
   position: absolute;
   bottom: -1px;
   left: 0;
+  z-index: 2;
   width: 100%;
   line-height: 0;
 }
@@ -583,6 +620,11 @@ table {
 }
 
 .doctor__photo img {
+  width: 100%;
+  /* 横長写真でも人物中心の縦構図にトリミングして表示する */
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: 30% center;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
