@@ -1038,7 +1038,283 @@ table {
 }
 
 /* ------------------------------
-   14. アニメーション
+   14. 予約・電話モーダル(デモ)
+------------------------------ */
+body.is-modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+/* display: flex が hidden 属性より優先されるのを防ぐ */
+.modal[hidden] {
+  display: none;
+}
+
+.modal__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(22, 50, 74, 0.6);
+}
+
+.modal__panel {
+  position: relative;
+  width: min(100%, 480px);
+  max-height: min(86vh, 720px);
+  overflow-y: auto;
+  padding: 28px 24px 24px;
+  border-radius: var(--radius);
+  background-color: var(--color-white);
+  box-shadow: 0 16px 48px rgba(22, 50, 74, 0.3);
+}
+
+.modal__panel--small {
+  width: min(100%, 400px);
+  text-align: center;
+}
+
+.modal__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-gray-bg);
+  color: var(--color-text-sub);
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.modal__close:hover {
+  background-color: var(--color-blue-pale);
+  color: var(--color-navy);
+}
+
+.modal__close svg {
+  width: 18px;
+  height: 18px;
+}
+
+.modal__title {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-navy);
+  text-align: center;
+}
+
+.modal__lead {
+  margin-bottom: 16px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.modal__lead-sub {
+  font-size: 12px;
+  color: var(--color-text-sub);
+}
+
+.modal__note {
+  margin-top: 16px;
+  font-size: 11px;
+  color: var(--color-text-sub);
+  text-align: center;
+}
+
+/* カレンダー */
+.calendar__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.calendar__month {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.calendar__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--color-gray-border);
+  border-radius: 8px;
+  background-color: var(--color-white);
+  color: var(--color-navy);
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.calendar__nav:hover:not(:disabled) {
+  background-color: var(--color-blue-pale);
+}
+
+.calendar__nav:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.calendar__nav svg {
+  width: 18px;
+  height: 18px;
+}
+
+.calendar__grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.calendar__weekday {
+  padding: 4px 0;
+  font-size: 12px;
+  color: var(--color-text-sub);
+  text-align: center;
+}
+
+.calendar__day {
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-white);
+  font-size: 14px;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.calendar__day:hover:not(:disabled) {
+  background-color: var(--color-blue-pale);
+}
+
+.calendar__day:disabled {
+  color: #c3ccd4;
+  cursor: default;
+}
+
+.calendar__day.is-today {
+  box-shadow: inset 0 0 0 1px var(--color-blue-light);
+}
+
+.calendar__day.is-selected {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+/* 時間枠 */
+.booking-slots {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-gray-border);
+}
+
+.booking-slots__label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.booking-slots__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.booking-slots__slot {
+  padding: 8px 0;
+  border: 1px solid var(--color-gray-border);
+  border-radius: 8px;
+  background-color: var(--color-white);
+  font-size: 13px;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.booking-slots__slot:hover {
+  border-color: var(--color-blue);
+  background-color: var(--color-blue-pale);
+  color: var(--color-navy);
+}
+
+/* 予約完了(デモ) */
+.booking-done {
+  padding: 8px 0;
+  text-align: center;
+}
+
+.booking-done__icon {
+  margin-bottom: 12px;
+  color: var(--color-blue);
+}
+
+.booking-done__icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+.booking-done__text {
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.booking-done__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* 電話モーダル */
+.tel-modal__number {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0 8px;
+  font-family: var(--font-en);
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+.tel-modal__number:hover {
+  color: var(--color-blue-dark);
+}
+
+.tel-modal__icon {
+  width: 26px;
+  height: 26px;
+  color: var(--color-blue);
+}
+
+.tel-modal__hours {
+  font-size: 13px;
+  color: var(--color-text-sub);
+}
+
+/* ------------------------------
+   15. アニメーション
 ------------------------------ */
 .fade-in {
   opacity: 0;
