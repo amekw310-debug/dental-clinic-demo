@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="待合室の写真(プレースホルダー)">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f9fd"/>
+      <stop offset="1" stop-color="#dcebf7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="120" cy="110" r="120" fill="#eaf3fa" opacity="0.8"/>
+  <circle cx="700" cy="500" r="110" fill="#eaf3fa" opacity="0.8"/>
+
+  <!-- ソファ -->
+  <g fill="none" stroke="#1e4e79" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M270 260v-20a30 30 0 0130-30h200a30 30 0 0130 30v20"/>
+    <path d="M250 260a30 30 0 00-30 30v70a20 20 0 0020 20h320a20 20 0 0020-20v-70a30 30 0 00-60 0v30H310v-30a30 30 0 00-60 0z"/>
+    <path d="M265 380v30M535 380v30"/>
+    <path d="M340 300h120" stroke="#8fbfe0"/>
+  </g>
+
+  <text x="400" y="500" text-anchor="middle" font-family="'Noto Sans JP', sans-serif" font-size="28" font-weight="bold" fill="#1e4e79">待合室</text>
+  <text x="400" y="532" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="14" letter-spacing="3" fill="#6b7885">WAITING ROOM</text>
+</svg>

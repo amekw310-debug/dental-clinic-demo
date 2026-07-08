@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="滅菌・消毒室の写真(プレースホルダー)">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f9fd"/>
+      <stop offset="1" stop-color="#dcebf7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="120" cy="110" r="110" fill="#eaf3fa" opacity="0.8"/>
+  <circle cx="690" cy="500" r="110" fill="#eaf3fa" opacity="0.8"/>
+
+  <!-- 滅菌器(オートクレーブ) -->
+  <g fill="none" stroke="#1e4e79" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="270" y="240" width="260" height="180" rx="18"/>
+    <circle cx="360" cy="330" r="48"/>
+    <circle cx="360" cy="330" r="22" stroke="#8fbfe0"/>
+    <path d="M460 290h40M460 330h40" stroke="#8fbfe0"/>
+    <path d="M330 200c0-14 14-14 14-28M400 200c0-14 14-14 14-28M470 200c0-14 14-14 14-28" stroke="#8fbfe0"/>
+  </g>
+
+  <text x="400" y="500" text-anchor="middle" font-family="'Noto Sans JP', sans-serif" font-size="28" font-weight="bold" fill="#1e4e79">滅菌・消毒室</text>
+  <text x="400" y="532" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="14" letter-spacing="3" fill="#6b7885">STERILIZATION</text>
+</svg>
