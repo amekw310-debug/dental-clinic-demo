@@ -43,6 +43,7 @@
 
   /* レイアウト */
   --width-content: 1080px;
+  --notice-height: 40px; /* デモサイト注記バー(スマホは2行想定) */
   --header-height: 64px;
   --fixed-cta-height: 60px;
   --radius: 12px;
@@ -60,8 +61,8 @@
 
 html {
   scroll-behavior: smooth;
-  /* 固定ヘッダーの高さぶんアンカー位置を下げる */
-  scroll-padding-top: calc(var(--header-height) + 12px);
+  /* 固定の注記バー+ヘッダーの高さぶんアンカー位置を下げる */
+  scroll-padding-top: calc(var(--notice-height) + var(--header-height) + 12px);
 }
 
 body {
@@ -232,11 +233,30 @@ table {
 }
 
 /* ------------------------------
-   3. ヘッダー・ナビゲーション
+   3. デモサイト注記・ヘッダー・ナビゲーション
 ------------------------------ */
-.header {
+/* デモサイト注記:ページ最上部に常時表示する帯 */
+.demo-notice {
   position: fixed;
   top: 0;
+  left: 0;
+  z-index: 101;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: var(--notice-height);
+  padding: 0 12px;
+  background-color: var(--color-navy-deep);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 10px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.header {
+  position: fixed;
+  top: var(--notice-height);
   left: 0;
   z-index: 100;
   width: 100%;
@@ -347,11 +367,11 @@ table {
 /* ナビ(モバイル:ドロワー) */
 .gnav {
   position: fixed;
-  top: var(--header-height);
+  top: calc(var(--notice-height) + var(--header-height));
   right: 0;
   z-index: 99;
   width: min(78%, 320px);
-  height: calc(100vh - var(--header-height));
+  height: calc(100vh - var(--notice-height) - var(--header-height));
   padding: 32px 24px;
   background-color: var(--color-white);
   box-shadow: -4px 0 24px rgba(30, 78, 121, 0.12);
@@ -395,7 +415,7 @@ table {
 ------------------------------ */
 .hero {
   position: relative;
-  padding: calc(var(--header-height) + 48px) 0 96px;
+  padding: calc(var(--notice-height) + var(--header-height) + 48px) 0 96px;
   background: linear-gradient(160deg, #f4f9fd 0%, var(--color-blue-pale) 55%, #dcebf7 100%);
   overflow: hidden;
 }
@@ -1046,6 +1066,14 @@ table {
    タブレット(768px〜)
 ============================================================ */
 @media (min-width: 768px) {
+  :root {
+    --notice-height: 32px; /* 注記が1行に収まるため低くする */
+  }
+
+  .demo-notice {
+    font-size: 12px;
+  }
+
   .pc-only {
     display: inline;
   }
@@ -1059,7 +1087,7 @@ table {
   }
 
   .hero {
-    padding: calc(var(--header-height) + 72px) 0 120px;
+    padding: calc(var(--notice-height) + var(--header-height) + 72px) 0 120px;
   }
 
   .hero__inner {
