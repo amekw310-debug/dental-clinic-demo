@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== SEO ===== -->
+  <title>Smile Dental Clinic|スマイルデンタルクリニック - 東京駅徒歩3分の歯医者</title>
+  <meta name="description" content="スマイルデンタルクリニックは東京駅徒歩3分の歯科医院です。一般歯科・予防歯科・小児歯科・審美歯科に対応。痛みに配慮した治療と丁寧なカウンセリングで、あなたの笑顔をもっと健康にします。WEB予約受付中。">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://example.com/dental-clinic-demo/">
+
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Smile Dental Clinic">
+  <meta property="og:title" content="Smile Dental Clinic|あなたの笑顔を、もっと健康に。">
+  <meta property="og:description" content="東京駅徒歩3分の歯科医院。一般歯科・予防歯科・小児歯科・審美歯科に対応しています。">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 構造化データ(ローカルビジネス) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Smile Dental Clinic(スマイルデンタルクリニック)",
+    "description": "東京駅徒歩3分の歯科医院。一般歯科・予防歯科・小児歯科・審美歯科に対応。",
+    "address": {
+      "@type": "PostalAddress",
+      "postalCode": "100-0005",
+      "addressRegion": "東京都",
+      "addressLocality": "千代田区",
+      "streetAddress": "丸の内1-1-1 スマイルビル2F"
+    },
+    "telephone": "+81-3-1234-5678",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- =========================
+       ヘッダー
+  ========================== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#top" class="header__logo" aria-label="Smile Dental Clinic トップへ">
+        <svg class="header__logo-mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+          <path d="M20 4C13 4 8 9 8 15c0 4 1.5 6.5 2.5 9.5S12 34 14.5 36c1.6 1.3 3.5.4 3.8-1.8.3-2.4.5-6.2 1.7-6.2s1.4 3.8 1.7 6.2c.3 2.2 2.2 3.1 3.8 1.8 2.5-2 3-8.5 4-11.5S32 19 32 15c0-6-5-11-12-11z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+        </svg>
+        <span class="header__logo-text">
+          <span class="header__logo-en">Smile Dental Clinic</span>
+          <span class="header__logo-ja">スマイルデンタルクリニック</span>
+        </span>
+      </a>
+
+      <nav class="gnav" id="gnav" aria-label="グローバルナビゲーション">
+        <ul class="gnav__list">
+          <li><a href="#about" class="gnav__link">医院紹介</a></li>
+          <li><a href="#services" class="gnav__link">診療内容</a></li>
+          <li><a href="#doctor" class="gnav__link">院長紹介</a></li>
+          <li><a href="#facility" class="gnav__link">院内紹介</a></li>
+          <li><a href="#hours" class="gnav__link">診療時間</a></li>
+          <li><a href="#access" class="gnav__link">アクセス</a></li>
+          <li class="gnav__cta"><a href="#contact" class="btn btn--primary btn--small">WEB予約はこちら</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-btn" id="menu-btn" type="button" aria-controls="gnav" aria-expanded="false">
+        <span class="menu-btn__bar" aria-hidden="true"></span>
+        <span class="menu-btn__label">MENU</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- =========================
+         ヒーロー
+    ========================== -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <p class="hero__lead">東京駅徒歩3分・土曜も診療</p>
+          <h1 class="hero__title">あなたの笑顔を、<br>もっと健康に。</h1>
+          <p class="hero__text">
+            スマイルデンタルクリニックは、痛みに配慮したやさしい治療と、<br class="pc-only">
+            丁寧なカウンセリングを大切にする歯科医院です。<br class="pc-only">
+            お口の健康を通じて、毎日をもっと笑顔にするお手伝いをします。
+          </p>
+          <div class="hero__buttons">
+            <a href="#contact" class="btn btn--primary">WEB予約はこちら</a>
+            <a href="#hours" class="btn btn--outline">診療時間を見る</a>
+          </div>
+        </div>
+
+        <!-- 装飾イラスト -->
+        <div class="hero__visual" aria-hidden="true">
+          <svg viewBox="0 0 320 320" focusable="false">
+            <circle cx="160" cy="160" r="150" fill="#dcebf7"/>
+            <circle cx="160" cy="160" r="118" fill="#ffffff" opacity="0.65"/>
+            <path d="M160 70c-38 0-64 26-64 58 0 21 8 34 13 50s5 51 19 62c8.5 6.8 18.5 2 20-9.5 1.7-12.6 2.7-32.5 12-32.5s10.3 19.9 12 32.5c1.5 11.5 11.5 16.3 20 9.5 14-11 14-46 19-62s13-29 13-50c0-32-26-58-64-58z" fill="none" stroke="#1e4e79" stroke-width="6" stroke-linejoin="round"/>
+            <path d="M120 120c8-14 22-22 40-22" fill="none" stroke="#8fbfe0" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="248" cy="78" r="10" fill="#8fbfe0"/>
+            <circle cx="270" cy="110" r="6" fill="#bcd8ec"/>
+            <circle cx="58" cy="230" r="8" fill="#bcd8ec"/>
+          </svg>
+        </div>
+      </div>
+      <div class="hero__wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" focusable="false">
+          <path d="M0 40C240 80 480 0 720 20s480 60 720 20v40H0z" fill="#ffffff"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- =========================
+         医院紹介
+    ========================== -->
+    <section class="section" id="about">
+      <div class="section__inner">
+        <h2 class="section__title"><span class="section__title-en">About</span>医院紹介</h2>
+        <p class="section__lead">
+          「歯医者は痛くなってから行く場所」ではなく、<br class="pc-only">
+          「健康な歯を守るために通う場所」へ。<br>
+          当院は、患者さま一人ひとりに寄り添う診療を心がけています。
+        </p>
+
+        <ul class="features fade-in">
+          <li class="features__item">
+            <div class="features__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" focusable="false"><path d="M24 6C14 6 6 13 6 22c0 5.5 3 10.3 7.7 13.2L12 42l8.6-4.3c1.1.2 2.2.3 3.4.3 10 0 18-7 18-16S34 6 24 6z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><circle cx="17" cy="22" r="1.8" fill="currentColor"/><circle cx="24" cy="22" r="1.8" fill="currentColor"/><circle cx="31" cy="22" r="1.8" fill="currentColor"/></svg>
+            </div>
+            <h3 class="features__title">丁寧なカウンセリング</h3>
+            <p class="features__text">治療を始める前に、お悩みやご希望をしっかり伺います。治療内容・期間・費用をわかりやすくご説明し、納得いただいてから進めます。</p>
+          </li>
+          <li class="features__item">
+            <div class="features__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" focusable="false"><path d="M24 42s-16-9.6-16-21c0-6 4.6-10 10-10 3 0 5 1.4 6 3 1-1.6 3-3 6-3 5.4 0 10 4 10 10 0 11.4-16 21-16 21z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="features__title">痛みに配慮した治療</h3>
+            <p class="features__text">表面麻酔や電動麻酔器を活用し、できる限り痛みを抑えた治療を行います。歯科が苦手な方やお子さまも安心してご来院ください。</p>
+          </li>
+          <li class="features__item">
+            <div class="features__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" focusable="false"><path d="M24 4l16 6v12c0 10-6.6 17.4-16 22C14.6 39.4 8 32 8 22V10z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><path d="M17 23l5 5 9-10" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="features__title">徹底した衛生管理</h3>
+            <p class="features__text">ヨーロッパ基準クラスBの滅菌器を導入し、治療器具は患者さまごとに滅菌。院内感染対策を徹底し、清潔な環境を保っています。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =========================
+         診療内容
+    ========================== -->
+    <section class="section section--bg" id="services">
+      <div class="section__inner">
+        <h2 class="section__title"><span class="section__title-en">Services</span>診療内容</h2>
+        <p class="section__lead">
+          むし歯治療から予防・お子さまの歯・見た目のケアまで、<br class="pc-only">
+          幅広いお口のお悩みに対応しています。
+        </p>
+
+        <div class="cards fade-in">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" focusable="false"><path d="M24 6C16.5 6 11 11.5 11 18c0 4.3 1.6 7 2.7 10.2S15 40 18 42.4c1.8 1.4 4 .4 4.3-2 .4-2.7.6-7 1.7-7s1.3 4.3 1.7 7c.3 2.4 2.5 3.4 4.3 2 3-2.4 3.2-11 4.3-14.2S37 22.3 37 18c0-6.5-5.5-12-13-12z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="card__title">一般歯科</h3>
+            <p class="card__text">むし歯や歯周病の治療、詰め物・被せ物など。できる限り「削らない・抜かない」治療で、ご自身の歯を長く守ります。</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" focusable="false"><path d="M14 6l4 10M14 6c-4 2-7 6-7 11 0 8 6 14 13 14M14 6c2.5-1.3 5.5-2 8-2M34 6l-4 10M34 6c4 2 7 6 7 11 0 8-6 14-13 14M34 6c-2.5-1.3-5.5-2-8-2M24 31v11" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="card__title">予防歯科</h3>
+            <p class="card__text">歯のクリーニング(PMTC)やフッ素塗布、ブラッシング指導など。定期的なメンテナンスでむし歯・歯周病を未然に防ぎます。</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" focusable="false"><circle cx="24" cy="18" r="9" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M9 42c1.5-8 7.5-12 15-12s13.5 4 15 12" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M20 19c1 1.2 2.4 2 4 2s3-.8 4-2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="card__title">小児歯科</h3>
+            <p class="card__text">お子さまのペースに合わせ、歯医者を「怖い場所」にしない診療を大切にしています。キッズスペースもご用意しています。</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" focusable="false"><path d="M24 8l3.6 8.4L36 20l-8.4 3.6L24 32l-3.6-8.4L12 20l8.4-3.6z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M36 30l1.8 4.2L42 36l-4.2 1.8L36 42l-1.8-4.2L30 36l4.2-1.8zM12 34l1.4 3.1L16.5 38l-3.1 1.4L12 42.5l-1.4-3.1L7.5 38l3.1-1.4z" fill="currentColor" opacity="0.55"/></svg>
+            </div>
+            <h3 class="card__title">審美歯科</h3>
+            <p class="card__text">ホワイトニングやセラミック治療など、見た目の美しさと機能性を両立。自信をもって笑える口もとをサポートします。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         院長紹介
+    ========================== -->
+    <section class="section" id="doctor">
+      <div class="section__inner">
+        <h2 class="section__title"><span class="section__title-en">Doctor</span>院長紹介</h2>
+
+        <div class="doctor fade-in">
+          <figure class="doctor__photo">
+            <img src="images/doctor.svg" alt="院長 佐藤 健太の写真" width="600" height="720" loading="lazy">
+          </figure>
+          <div class="doctor__body">
+            <p class="doctor__position">院長</p>
+            <p class="doctor__name">佐藤 健太<span class="doctor__name-en">Kenta Sato</span></p>
+            <p class="doctor__message">
+              はじめまして。院長の佐藤です。<br>
+              私は「治療が終わったあとも、通いたくなる歯科医院」を目指してこのクリニックを開院しました。
+              歯の治療は、不安や緊張を伴うものです。だからこそ当院では、まずじっくりお話を伺い、
+              一人ひとりに合った治療計画をご提案します。<br>
+              お口のことで気になることがあれば、どんな小さなことでもお気軽にご相談ください。
+            </p>
+            <dl class="doctor__history">
+              <dt>経歴</dt>
+              <dd>
+                <ul>
+                  <li>2008年 東京歯科大学 卒業</li>
+                  <li>2008年 都内総合病院 歯科口腔外科 勤務</li>
+                  <li>2013年 医療法人スマイル会 分院長 就任</li>
+                  <li>2018年 スマイルデンタルクリニック 開院</li>
+                </ul>
+              </dd>
+              <dt>所属・資格</dt>
+              <dd>
+                <ul>
+                  <li>日本歯科保存学会 会員</li>
+                  <li>日本小児歯科学会 会員</li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         院内紹介
+    ========================== -->
+    <section class="section section--bg" id="facility">
+      <div class="section__inner">
+        <h2 class="section__title"><span class="section__title-en">Facility</span>院内紹介</h2>
+        <p class="section__lead">
+          リラックスして治療を受けていただけるよう、<br class="pc-only">
+          明るく清潔な院内環境を整えています。
+        </p>
+
+        <ul class="gallery fade-in">
+          <li class="gallery__item">
+            <img src="images/facility-reception.svg" alt="受付の様子" width="800" height="600" loading="lazy">
+            <p class="gallery__caption">受付</p>
+          </li>
+          <li class="gallery__item">
+            <img src="images/facility-waiting.svg" alt="待合室の様子" width="800" height="600" loading="lazy">
+            <p class="gallery__caption">待合室</p>
+          </li>
+          <li class="gallery__item">
+            <img src="images/facility-unit.svg" alt="診療室の様子" width="800" height="600" loading="lazy">
+            <p class="gallery__caption">診療室</p>
+          </li>
+          <li class="gallery__item">
+            <img src="images/facility-private.svg" alt="個室診療室の様子" width="800" height="600" loading="lazy">
+            <p class="gallery__caption">個室診療室</p>
+          </li>
+          <li class="gallery__item">
+            <img src="images/facility-kids.svg" alt="キッズスペースの様子" width="800" height="600" loading="lazy">
+            <p class="gallery__caption">キッズスペース</p>
+          </li>
+          <li class="gallery__item">
+            <img src="images/facility-sterilization.svg" alt="滅菌・消毒室の様子" width="800" height="600" loading="lazy">
+            <p class="gallery__caption">滅菌・消毒室</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =========================
+         診療時間
+    ========================== -->
+    <section class="section" id="hours">
+      <div class="section__inner">
+        <h2 class="section__title"><span class="section__title-en">Hours</span>診療時間</h2>
+
+        <div class="hours fade-in">
+          <div class="hours__table-wrap">
+            <table class="hours__table">
+              <caption class="visually-hidden">診療時間のご案内</caption>
+              <thead>
+                <tr>
+                  <th scope="col">診療時間</th>
+                  <th scope="col">月</th>
+                  <th scope="col">火</th>
+                  <th scope="col">水</th>
+                  <th scope="col">木</th>
+                  <th scope="col">金</th>
+                  <th scope="col">土</th>
+                  <th scope="col">日祝</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">9:00 〜 13:00</th>
+                  <td><span class="hours__open" aria-label="診療あり">●</span></td>
+                  <td><span class="hours__open" aria-label="診療あり">●</span></td>
+                  <td><span class="hours__open" aria-label="診療あり">●</span></td>
+                  <td><span class="hours__closed" aria-label="休診">－</span></td>
+                  <td><span class="hours__open" aria-label="診療あり">●</span></td>
+                  <td><span class="hours__open" aria-label="診療あり">●</span></td>
+                  <td><span class="hours__closed" aria-label="休診">－</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">14:30 〜 18:30</th>
+                  <td><span class="hours__open" aria-label="診療あり">●</span></td>
+                  <td><span class="hours__open" aria-label="診療あり">●</span></td>
+                  <td><span class="hours__open" aria-label="診療あり">●</span></td>
+                  <td><span class="hours__closed" aria-label="休診">－</span></td>
+                  <td><span class="hours__open" aria-label="診療あり">●</span></td>
+                  <td><span class="hours__sat" aria-label="土曜は14時から17時まで">▲</span></td>
+                  <td><span class="hours__closed" aria-label="休診">－</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <ul class="hours__notes">
+            <li>▲ 土曜午後は 14:00 〜 17:00 の診療です。</li>
+            <li>休診日:木曜・日曜・祝日</li>
+            <li>最終受付は診療終了の30分前です。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         アクセス
+    ========================== -->
+    <section class="section section--bg" id="access">
+      <div class="section__inner">
+        <h2 class="section__title"><span class="section__title-en">Access</span>アクセス</h2>
+
+        <div class="access fade-in">
+          <div class="access__map">
+            <iframe
+              src="https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%A7%85&z=16&ie=UTF8&output=embed"
+              title="Smile Dental Clinic 周辺地図"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+          </div>
+          <div class="access__info">
+            <dl class="access__list">
+              <div class="access__row">
+                <dt>住所</dt>
+                <dd>〒100-0005<br>東京都千代田区丸の内1-1-1<br>スマイルビル2F</dd>
+              </div>
+              <div class="access__row">
+                <dt>電車</dt>
+                <dd>JR各線「東京」駅 丸の内北口より徒歩3分</dd>
+              </div>
+              <div class="access__row">
+                <dt>お車</dt>
+                <dd>提携駐車場あり(受付にて駐車券をご提示ください)</dd>
+              </div>
+              <div class="access__row">
+                <dt>電話</dt>
+                <dd><a href="tel:0312345678" class="access__tel">03-1234-5678</a></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         お問い合わせ・予約 CTA
+    ========================== -->
+    <section class="contact" id="contact">
+      <div class="contact__inner">
+        <h2 class="contact__title">ご予約・お問い合わせ</h2>
+        <p class="contact__text">
+          初めての方もお気軽にご相談ください。<br>
+          WEB予約は24時間受付、お電話は診療時間内にお願いいたします。
+        </p>
+        <div class="contact__buttons">
+          <a href="#" class="btn btn--cta" aria-label="WEB予約フォームへ(デモのためリンク先はありません)">
+            <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5h16a1 1 0 011 1v13a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1zm-1 5h18M8 3v4m8-4v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 14l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            WEB予約はこちら
+          </a>
+          <a href="tel:0312345678" class="btn btn--tel">
+            <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 005 5L15 13l5 2v4a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            03-1234-5678
+          </a>
+        </div>
+        <p class="contact__note">受付時間:9:00〜18:30(土曜は17:00まで/木・日・祝休診)</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       フッター
+  ========================== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__clinic">
+        <p class="footer__logo">
+          <span class="footer__logo-en">Smile Dental Clinic</span>
+          <span class="footer__logo-ja">スマイルデンタルクリニック</span>
+        </p>
+        <p class="footer__address">
+          〒100-0005 東京都千代田区丸の内1-1-1 スマイルビル2F<br>
+          TEL:<a href="tel:0312345678">03-1234-5678</a>
+        </p>
+      </div>
+      <nav class="footer__nav" aria-label="フッターナビゲーション">
+        <ul class="footer__list">
+          <li><a href="#about">医院紹介</a></li>
+          <li><a href="#services">診療内容</a></li>
+          <li><a href="#doctor">院長紹介</a></li>
+          <li><a href="#facility">院内紹介</a></li>
+          <li><a href="#hours">診療時間</a></li>
+          <li><a href="#access">アクセス</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__note">※ このサイトはポートフォリオ用に制作した架空の歯科医院のデモサイトです。実在の医院・人物とは関係ありません。</p>
+      <p class="footer__copy"><small>&copy; <span id="year">2026</span> Smile Dental Clinic</small></p>
+    </div>
+  </footer>
+
+  <!-- =========================
+       固定CTA(スマホ用バー/PC用フロートボタン)
+  ========================== -->
+  <div class="fixed-cta" id="fixed-cta" aria-hidden="true">
+    <a href="tel:0312345678" class="fixed-cta__tel">
+      <svg class="fixed-cta__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 005 5L15 13l5 2v4a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      電話で予約
+    </a>
+    <a href="#contact" class="fixed-cta__web">
+      <svg class="fixed-cta__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5h16a1 1 0 011 1v13a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1zm-1 5h18M8 3v4m8-4v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      WEB予約はこちら
+    </a>
+  </div>
+
+  <!-- ページトップへ戻る -->
+  <button class="to-top" id="to-top" type="button" aria-label="ページの先頭へ戻る">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 14l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

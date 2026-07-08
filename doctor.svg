@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 720" role="img" aria-label="院長の写真(プレースホルダー)">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f9fd"/>
+      <stop offset="1" stop-color="#dcebf7"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="720" fill="url(#bg)"/>
+  <circle cx="500" cy="90" r="120" fill="#eaf3fa" opacity="0.8"/>
+  <circle cx="70" cy="600" r="90" fill="#eaf3fa" opacity="0.8"/>
+
+  <!-- 人物シルエット(白衣) -->
+  <g>
+    <circle cx="300" cy="270" r="95" fill="#bcd8ec"/>
+    <path d="M300 385c-120 0-185 70-200 175-3 22 8 40 30 40h340c22 0 33-18 30-40-15-105-80-175-200-175z" fill="#ffffff" stroke="#bcd8ec" stroke-width="6"/>
+    <path d="M300 395l-45 55 45 120 45-120z" fill="#eaf3fa"/>
+    <path d="M255 450l45 65 45-65" fill="none" stroke="#bcd8ec" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+
+  <text x="300" y="640" text-anchor="middle" font-family="'Noto Sans JP', sans-serif" font-size="26" font-weight="bold" fill="#1e4e79">院長写真</text>
+  <text x="300" y="672" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="14" letter-spacing="3" fill="#6b7885">PHOTO PLACEHOLDER</text>
+</svg>
